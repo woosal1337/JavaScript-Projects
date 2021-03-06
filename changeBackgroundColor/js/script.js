@@ -1,5 +1,5 @@
 //Choose a random color
-const button = document.querySelector('button')
+const button = document.getElementsByClassName("btn btn-outline-secondary")
 const body = document.querySelector('body')
 const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
 
