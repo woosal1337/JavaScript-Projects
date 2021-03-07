@@ -8,6 +8,12 @@ function counterAdd() {
   addCount.addEventListener("click", function (e) {
     counter.textContent = value;
   })
+
+  if (value > 0) {
+    counter.style.color = "green";
+  } else if (value === 0) {
+    counter.style.color = "gray";
+  }
 }
 
 function counterSubtract() {
@@ -17,5 +23,11 @@ function counterSubtract() {
 
   addCount.addEventListener("click", function (e) {
     counter.textContent = value;
-  })
+  });
+
+  if (value < 0) {
+    counter.style.color = "red";
+  } else if (value === 0) {
+    counter.style.color = "gray";
+  }
 }
