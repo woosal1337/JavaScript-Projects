@@ -57,3 +57,12 @@ function onSubmit() {
 Output:
 JavaScript function listens to the form submit without letting the page to refresh and reset all the values.
 ```
+
+Change `HTML` embedded text color
+```
+const counter = document.getElementById("counter");
+counter.style.color \= "red";
+
+Output:
+ID "counter" text is now red colored.
+```
