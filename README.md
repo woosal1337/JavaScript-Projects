@@ -1,4 +1,4 @@
-# 🎓 Self-taught JavaScript Notes
+# Self-taught JavaScript Notes
 
 Formatting String -> fstring
 ```
@@ -34,5 +34,26 @@ const customRange = 10;
 console.log(Math.round(Math.random(1) * customRange));
 
 Output:
+An integer output of the given range -> (customRange)
+```
 
+Prevent `form` to refresh the page
+```
+function onSubmit() {  
+  
+    const form = document.getElementById("message-form")  
+  
+    form.addEventListener("submit", function (e) {  
+        e.preventDefault();  
+  
+		 const message = document.getElementById("message").value;  
+		 const messageBox = document.getElementById("message-box")  
+
+		 messageBox.textContent = message;  
+  
+ 	})  
+}
+
+Output:
+JavaScript function listens to the form submit without letting the page to refresh and reset all the values.
 ```
