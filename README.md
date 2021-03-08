@@ -1,4 +1,4 @@
-# Self-taught JavaScript Notes
+# 😎 Self-taught JavaScript Notes
 
 Formatting String -> fstring
 ```
