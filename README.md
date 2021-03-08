@@ -66,3 +66,71 @@ counter.style.color \= "red";
 Output:
 ID "counter" text is now red colored.
 ```
+
+JavaScript Slider Function
+```
+// Right Click Button Redirect
+function right() {
+
+	x++;
+
+  	if (x >= 0) {
+
+		positive();
+
+	} else {
+
+		negative();
+	}
+};
+
+  
+
+// Left Click Button Redirect
+
+function left() {
+
+	x--;
+
+	if (x >= 0) {
+
+		positive();
+
+	} else {
+
+		negative();
+	}
+};
+
+  
+
+// Adding Number
+
+function positive() {
+
+	if (x >= imagePath.length) {
+
+		x = x % imagePath.length;
+
+	};
+
+	console.log(imagePath[x]);
+
+};
+
+  
+
+// Decreasing Number
+
+function negative() {
+
+  	if (x < \-imagePath.length) {
+
+		x \= x % imagePath.length;
+
+	};
+
+	console.log(imagePath[imagePath.length + x]);
+
+}
+```
